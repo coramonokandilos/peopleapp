@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Social Wall</title>
+    <title>HackerLab</title>
     <meta charset="UTF-8">
 
     <link rel="stylesheet" type="text/css" href="normalize.css">
@@ -10,26 +10,17 @@
   <body>
     <div id="page">
       <h1>Social Wall</h1>
-      <form id="message-form" method="POST" action="/messages">
-        <textarea id="message-body" name="body" placeholder="Enter a message here."></textarea>
-        <button type="submit">Post Message</button>
+      <form id="visit-form" method="POST" action="/visit">
+        <input type="text" name="email" placeholder="Your main e-mail address, be consistent"></input>
+        <input type="text" name="school" placeholder="School"></input> 
+        <input type="text" name="first" placeholder="First name"></input>
+        <textarea id="message-body" name="comments" placeholder="Enter any comments about your visit. What you did, what you liked..."></textarea>
+        <button type="submit">Record visit</button>
       </form>
-      <% if messages.empty? %>
-        <h2>Sorry, no messages. :(</h2>
-      <% else %>
-        <h2>Messages</h2>
-        <ol class="message-list">
-          <% messages.each do |message| %>
-            <li>
-              <div class="message-body">
-                <%= message.body %>
-              </div>
-              <div class="message-timestamp">
-                Posted on <%= message.created_at.strftime("%B %d, %Y at %l:%M%p") %>
-              </div>
-            </li>
-          <% end %>
-        </ol>
+      <% people.each do |person| %>
+        <p>
+          <%= person.email + " " + person.first + " " + person.school + " " + person.visits.length.to_s %>
+        </p>
       <% end %>
     </div>
   </body>
