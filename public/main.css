@@ -17,21 +17,36 @@ h1 {
   background-color: white;
 }
 
-#first-name, #school-name {
+#first-name {
   height: 50px;
-  width: 400px;
-  margin-left: 20px;
-  margin-top:30px;
-  margin-right: 20px;
+  width: 520px;
+  margin-left: 60px;
+  margin-top:60px;
+  /*margin-right: 20px;*/
+  border: solid 2px rgba(185,186,187,0.25);
+  border-radius: 0.5em;
+}
+
+#school-name {
+  height: 50px;
+  width: 520px;
+  margin-left: 60px;
+  margin-top:60px;
+  /*margin-right: 20px;*/
   border: solid 2px rgba(185,186,187,0.25);
   border-radius: 0.5em;
 }
 
 #email-name {
   height: 50px;
-  width: 400px;
+  width: 90%;
   border: solid 2px rgba(185,186,187,0.25);
   border-radius: 0.5em;
+  margin-top: 30px;
+  margin-left: 60px;
+
+
+  
 }
 /*#page {*/
 /*  margin: 20px auto;*/
