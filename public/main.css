@@ -13,7 +13,7 @@ h1 {
 #forms {
   margin: 20px auto;
   width: 70%;
-  height: 500px;
+  height: 10%;
   background-color: white;
 }
 
@@ -44,10 +44,28 @@ h1 {
   border-radius: 0.5em;
   margin-top: 30px;
   margin-left: 60px;
-
-
-  
 }
+#message-body {
+  height: 250px;
+  width: 90%;
+  border: solid 2px rgba(185,186,187,0.25);
+  border-radius: 0.5em;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+#visit-button{
+  background: #e7746f;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.4em 0.4em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2.0em;
+  margin: 1.25em 0 0.5em 0;
+  border: 0;
+}
+
+
 /*#page {*/
 /*  margin: 20px auto;*/
   /*width: 400px;*/
