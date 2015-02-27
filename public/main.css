@@ -3,18 +3,36 @@ body {
   color: rgb(32, 32, 32);
 }
 h1 {
+  margin-top: 50px;
   text-align: center;
   color: #39454b;
   width: 100%;
+  font-size: 50px;
 }
 
 #forms {
   margin: 20px auto;
-  width: 600px;
+  width: 70%;
   height: 500px;
   background-color: white;
 }
 
+#first-name, #school-name {
+  height: 50px;
+  width: 400px;
+  margin-left: 20px;
+  margin-top:30px;
+  margin-right: 20px;
+  border: solid 2px rgba(185,186,187,0.25);
+  border-radius: 0.5em;
+}
+
+#email-name {
+  height: 50px;
+  width: 400px;
+  border: solid 2px rgba(185,186,187,0.25);
+  border-radius: 0.5em;
+}
 /*#page {*/
 /*  margin: 20px auto;*/
   /*width: 400px;*/
