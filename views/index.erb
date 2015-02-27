@@ -9,7 +9,8 @@
   </head>
   <body>
     <div id="page">
-      <h1>Social Wall</h1>
+      <h1>Welcome to Mission Bit Hacker Lab!</h1>
+      <div id="forms">
       <form id="visit-form" method="POST" action="/visit">
         <input type="text" name="email" placeholder="Your main e-mail address, be consistent"></input>
         <input type="text" name="school" placeholder="School"></input> 
@@ -17,9 +18,20 @@
         <textarea id="message-body" name="comments" placeholder="Enter any comments about your visit. What you did, what you liked..."></textarea>
         <button type="submit">Record visit</button>
       </form>
+      </div>
       <% people.each do |person| %>
         <p>
           <%= person.email + " " + person.first + " " + person.school + " " + person.visits.length.to_s %>
+          <p>
+            <% person.visits.each do |visit| %>
+              <% if visit.shown == 1 %>
+                <p><%= visit.comments %></p> 
+                <form id="visit-form" method="POST" action=<%= "/deletevisit/" + visit.id.to_s %>>
+                  <button type="submit">Hide visit</button>
+                </form>
+              <% end %>
+            <% end %>
+          </p>
         </p>
       <% end %>
     </div>

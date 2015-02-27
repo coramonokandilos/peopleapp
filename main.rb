@@ -25,8 +25,13 @@ class Visit
   property :id,         Serial 
   property :created_at, DateTime, required: true
   property :comments,   Text
+  property :shown,      Integer,  default: 1
   
   belongs_to :person, "Person"
+  
+  def hide()
+    self.shown = 0
+  end
 end
   
 DataMapper.finalize()
@@ -50,6 +55,13 @@ post("/visit") do
     p visit.errors
     erb(:error)
   end
+end
+
+post("/deletevisit/*") do |id|
+  visit = Visit.get(id)
+  visit.hide()
+  visit.save
+  redirect("/")
 end
 
 =begin
