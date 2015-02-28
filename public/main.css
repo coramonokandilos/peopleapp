@@ -1,12 +1,13 @@
 body {  height:100%;
   width:100%;
   background-image: url("colorful-triangles-background.jpg");
-  /*background-size: 100% 120%;*/
+  background-size: 100% 120%;
 
-  background-color: #f5f6f7;
-  color: rgb(32, 32, 32);
+  /*background-color: #f5f6f7;*/
+  /*color: rgb(32, 32, 32);*/
 }
 h1 {
+  font-family: 'Syncopate', sans-serif;
   margin-top: 50px;
   text-align: center;
   color: #39454b;
@@ -22,8 +23,8 @@ h1 {
 }
 
 #first-name {
-  height: 50px;
-  width: 520px;
+  height: 45px;
+  width: 90%;
   margin-left: 60px;
   margin-top:60px;
   /*margin-right: 20px;*/
@@ -32,17 +33,17 @@ h1 {
 }
 
 #school-name {
-  height: 50px;
-  width: 520px;
+  height: 45px;
+  width: 90%;
   margin-left: 60px;
-  margin-top:60px;
+  margin-top:30px;
   /*margin-right: 20px;*/
   border: solid 2px rgba(185,186,187,0.25);
   border-radius: 0.5em;
 }
 
 #email-name {
-  height: 50px;
+  height: 45px;
   width: 90%;
   border: solid 2px rgba(185,186,187,0.25);
   border-radius: 0.5em;
@@ -50,7 +51,7 @@ h1 {
   margin-left: 60px;
 }
 #message-body {
-  height: 250px;
+  height: 200px;
   width: 90%;
   border: solid 2px rgba(185,186,187,0.25);
   border-radius: 0.5em;
@@ -58,14 +59,15 @@ h1 {
   margin-left: 60px;
 }
 #visit-button{
-  background: #e7746f;
+  background: #39454b;;
+  /*background: #e7746f;*/
   color: #fff;
   border-radius: 4px;
   padding: 0.4em 0.4em;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.0em;
-  margin: 1.25em 0 0.5em 0;
+  margin: 15px 0 0.5em 0;
   border: 0;
 }
 
