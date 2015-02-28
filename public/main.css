@@ -1,4 +1,8 @@
-body {
+body {  height:100%;
+  width:100%;
+  background-image: url("colorful-triangles-background.jpg");
+  /*background-size: 100% 120%;*/
+
   background-color: #f5f6f7;
   color: rgb(32, 32, 32);
 }
@@ -13,7 +17,7 @@ h1 {
 #forms {
   margin: 20px auto;
   width: 70%;
-  height: 10%;
+  height: 100%;
   background-color: white;
 }
 
