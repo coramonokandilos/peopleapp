@@ -38,8 +38,14 @@ DataMapper.finalize()
 DataMapper.auto_upgrade!()
 
 get("/") do
+  p "Hello World"
   records = Person.all(order: :created_at.desc)
   erb(:index, locals: { people: records })
+end
+
+get("/visits") do
+  records = Person.all(order: :created_at.desc)
+  erb(:visits, locals: { people: records })
 end
 
 post("/visit") do

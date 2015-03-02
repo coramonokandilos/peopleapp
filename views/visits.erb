@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Social Wall</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+  </head>
+  <body>
+    <div id="page">
+      <h1>Visits to the Hacker Lab</h1>
+      <% people.each do |person| %>
+        <p>
+          <%= person.email + " " + person.first + " " + person.school + " " + person.visits.length.to_s %>
+          <p>
+            <% person.visits.each do |visit| %>
+              <% if visit.shown == 1 %>
+                <p><%= visit.comments %></p> 
+                <form id="visit-form" method="POST" action=<%= "/deletevisit/" + visit.id.to_s %>>
+                  <button type="submit">Hide visit</button>
+                </form>
+              <% end %>
+            <% end %>
+          </p>
+        </p>
+      <% end %>
+    </div>
+  </body>
+</html>
+
+
+

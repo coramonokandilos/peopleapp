@@ -12,7 +12,8 @@ h1 {
   text-align: center;
   color: #39454b;
   width: 100%;
-  font-size: 50px;
+  font-size: 40px;
+  
 }
 
 #forms {
@@ -59,6 +60,7 @@ h1 {
   margin-left: 60px;
 }
 #visit-button{
+  /*font-family: 'Syncopate', sans-serif;*/
   background: #39454b;;
   /*background: #e7746f;*/
   color: #fff;
