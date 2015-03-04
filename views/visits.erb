@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Social Wall</title>
+    <title>Visits to the Hacker Lab</title>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href='//fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+
   </head>
-  <body>
-    <div id="page">
+  <body id="body-visits">
+    <div>
       <h1>Visits to the Hacker Lab</h1>
+      <div id="forms-visits">
       <% people.each do |person| %>
         <p>
           <%= person.email + " " + person.first + " " + person.school + " " + person.visits.length.to_s %>
@@ -24,6 +27,7 @@
           </p>
         </p>
       <% end %>
+      </div>
     </div>
   </body>
 </html>
