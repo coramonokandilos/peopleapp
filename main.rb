@@ -48,6 +48,10 @@ get("/visits") do
   erb(:visits, locals: { people: records })
 end
 
+post("/redirectvisits") do
+  redirect("/visits")
+end
+
 post("/visit") do
   person = Person.find_by_name(params["email"]);
   if person == nil then

@@ -6,24 +6,30 @@
 
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div id="page">
       <!--<img src="missionbit.jpg" style="width: 400px; height: 300px;"/>-->
       
-      <h1>Welcome to the Mission Bit Hacker Lab!</h1>
+      <h1>Welcome to the Mission Bit Hacker Lab!
+      </h1>
+
       <div id="forms">
-        <a href="/visits">Look at recorded visits</a>
-        <form id="visit-form" method="POST" action="/visit">
-          <input type="text" name="first" placeholder="First name" id="first-name"></input>
-          <input type="text" name="school" placeholder="School" id="school-name"></input> 
-          <input type="text" name="email" placeholder="Your main e-mail address, be consistent" id="email-name"></input>
-          <textarea id="message-body" name="comments" placeholder="Enter any comments about your visit. What you did, what you liked..."></textarea>
-          <div id="button-center" align= "middle">
-          <button type="submit" id="visit-button">Record visit</button>
-          </div>
-        </form>
+      <form id="visit-form" method="POST" action="/visit">
+        <input type="text" name="first" placeholder="First name" id="first-name"></input>
+        <input type="text" name="school" placeholder="School" id="school-name"></input> 
+        <input type="text" name="email" placeholder="Your main e-mail address, be consistent" id="email-name"></input>
+        <textarea id="message-body" name="comments" placeholder="Enter any comments about your visit. What you did, what you liked..."></textarea>
+        <div id="button-center" align= "middle">
+        <button type="submit" id="visit-button">Record visit</button>
+        </div>
+      </form>
+        
+      </div>
+
+      <div id="button-left">
+        <a id="visits-button" href="/redirectvisits">Look at recorded visits</a>
       </div>
     </div>
   </body>
